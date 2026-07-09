@@ -1,0 +1,28 @@
+{
+  "name": "@ai-native-solutions/fallhr-api",
+  "version": "1.0.0",
+  "description": "HTTP API (express) wrapping @ai-native-solutions/fallhr-sdk — UK HR endpoints for SMEs.",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "fallhr-api": "src/server.js"
+  },
+  "files": ["src", "Dockerfile", "docker-compose.yml", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": ["hr", "uk-hr", "api", "express", "sme", "fallhr", "docker"],
+  "author": "AI-Native Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjgant80-hub/fallhr-api.git"
+  },
+  "homepage": "https://github.com/sjgant80-hub/fallhr-api",
+  "dependencies": {
+    "@ai-native-solutions/fallhr-sdk": "^1.0.0",
+    "express": "^4.19.2"
+  },
+  "engines": { "node": ">=18" }
+}

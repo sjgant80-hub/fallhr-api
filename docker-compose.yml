@@ -1,0 +1,11 @@
+services:
+  fallhr-api:
+    build: .
+    image: ai-native-solutions/fallhr-api:1.0.0
+    container_name: fallhr-api
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
