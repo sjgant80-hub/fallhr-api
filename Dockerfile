@@ -3,6 +3,6 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install --omit=dev
 COPY src ./src
+USER node
 EXPOSE 3000
-ENV NODE_ENV=production
-CMD ["node", "src/server.js"]
+CMD ["node", "src/index.js"]
